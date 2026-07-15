@@ -113,7 +113,7 @@ body{
 .blog-card{
     border:none;
     border-radius:18px;
-    overflow:hidden;
+    overflow:visible;
     background:white;
     box-shadow:0 8px 22px rgba(0,0,0,.06);
     transition:.3s;
@@ -126,8 +126,12 @@ body{
 
 .blog-card img{
     width:100%;
-    height:170px;
-    object-fit:cover;
+    height:auto;
+    max-height:250px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+    background:#fff;
 }
 
 .blog-card .card-body{

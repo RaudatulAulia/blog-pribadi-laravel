@@ -6,25 +6,16 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Figtree',sans-serif;
 }
 
 body{
 
-    font-family:'Segoe UI',sans-serif;
-
-    background:linear-gradient(135deg,#EAF8FF,#F7FCFF,#F1FFF8);
-
-    min-height:100vh;
+    background:linear-gradient(135deg,#EEF6FF,#F8FCFF,#F4FFFC);
 
 }
 
-/*===========================
-        CONTAINER
-===========================*/
-
-.login-wrapper{
-
-    width:100%;
+.login-page{
 
     min-height:100vh;
 
@@ -34,109 +25,252 @@ body{
 
     align-items:center;
 
-    padding:40px;
+    padding:35px;
 
 }
 
-.login-box{
+.login-card{
 
-    width:1100px;
+    width:1450px;
+    max-width:96%;
+    min-height:860px;
 
-    max-width:100%;
-
-    min-height:670px;
-
-    display:flex;
-
+    background:#fff;
+    border-radius:30px;
     overflow:hidden;
 
-    border-radius:30px;
+    display:grid;
+    grid-template-columns:48% 52%;
 
-    background:white;
-
-    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    box-shadow:0 25px 60px rgba(0,0,0,.10);
 
 }
-
-/*===========================
-        LEFT PANEL
-===========================*/
-
-.left-panel{
-
-    width:45%;
+.left-side{
 
     position:relative;
 
+    padding:55px 60px;
+
+    background:linear-gradient(135deg,#DFF1FF,#D9EEFF,#EAF9FF);
+
     overflow:hidden;
 
-    background:linear-gradient(145deg,#56CCF2,#7FD8FF,#A7F3D0);
+}
 
-    color:white;
+.left-side::before{
 
-    padding:60px 50px;
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.28);
+
+    right:-120px;
+
+    top:-120px;
+
+}
+
+.left-side::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.20);
+
+    left:-80px;
+
+    bottom:-90px;
+
+}
+
+.right-side{
+
+    background:#fff;
 
     display:flex;
-
-    flex-direction:column;
 
     justify-content:center;
 
     align-items:center;
+
+    padding:55px;
+
+}
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:55px;
+
+}
+
+.brand-logo{
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:18px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.brand-title{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#2563EB;
+
+}
+
+.brand-sub{
+
+    color:#64748B;
+
+    margin-top:4px;
+
+}
+
+.hero-title{
+
+    font-size:42px;
+    line-height:1.25;
+    font-weight:800;
+
+    color:#183B66;
+
+    margin-bottom:18px;
+
+}
+
+.hero-desc{
+
+     font-size:18px;
+    line-height:1.7;
+
+    color:#5C728B;
+
+    max-width:620px;
+
+    margin-bottom:30px;
+
+}
+
+.feature{
+
+    display:flex;
+    gap:16px;
+    margin-bottom:18px;
+
+}
+
+.feature-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:18px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.feature-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#183B66;
+
+    margin-bottom:4px;
+
+}
+
+.feature-desc{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+.hero-image{
+
+    margin-top:20px;
 
     text-align:center;
 
 }
 
-.left-panel::before{
+.hero-image img{
 
-    content:"";
+    width:100%;
 
-    position:absolute;
-
-    width:280px;
-
-    height:280px;
-
-    background:rgba(255,255,255,.12);
-
-    border-radius:50%;
-
-    top:-90px;
-
-    right:-90px;
+    max-width:470px;
 
 }
 
-.left-panel::after{
+.form-card{
 
-    content:"";
+    width:100%;
 
-    position:absolute;
+    max-width:620px;
 
-    width:190px;
+    background:#fff;
 
-    height:190px;
+    border-radius:26px;
 
-    background:rgba(255,255,255,.16);
+    padding:55px;
 
-    border-radius:50%;
-
-    bottom:-70px;
-
-    left:-70px;
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
 
 }
 
-.left-panel>*{
-
-    position:relative;
-
-    z-index:10;
-
-}
-
-.logo-circle{
+.lock-circle{
 
     width:95px;
 
@@ -144,640 +278,747 @@ body{
 
     border-radius:50%;
 
-    background:white;
+    background:#EEF5FF;
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
 
-    font-size:42px;
+    align-items:center;
+
+    margin:auto;
+
+    font-size:45px;
 
     margin-bottom:25px;
 
-    color:#47B5FF;
-
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
-
 }
 
-.brand-title{
+.form-title{
 
-    font-size:36px;
+    text-align:center;
+
+    font-size:48px;
+
+    color:#183B66;
 
     font-weight:700;
 
-    margin-bottom:15px;
+}
+
+.form-sub{
+
+    text-align:center;
+
+    color:#64748B;
+
+    margin-top:12px;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
 
 }
 
-.brand-desc{
+.form-group{
 
-    line-height:1.9;
-
-    font-size:15px;
-
-    opacity:.96;
-
-    max-width:340px;
+    margin-bottom:22px;
 
 }
 
-.tech-box{
+.form-group label{
 
-    margin-top:45px;
+    display:block;
 
-    background:rgba(255,255,255,.18);
+    font-weight:600;
 
-    backdrop-filter:blur(12px);
-
-    border-radius:20px;
-
-    padding:22px;
-
-    width:100%;
-
-}
-
-.tech-item{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    padding:10px 0;
-
-    border-bottom:1px solid rgba(255,255,255,.15);
-
-}
-
-.tech-item:last-child{
-
-    border:none;
-
-}
-
-/*===========================
-        RIGHT PANEL
-===========================*/
-
-.right-panel{
-
-    width:55%;
-
-    background:#FCFEFF;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:60px;
-
-}
-
-.login-card{
-
-    width:100%;
-
-    max-width:420px;
-
-}
-
-.login-title{
-
-    font-size:34px;
-
-    color:#184B6B;
-
-    font-weight:700;
+    color:#334155;
 
     margin-bottom:8px;
 
 }
 
-.login-subtitle{
-
-    color:#64748B;
-
-    line-height:1.8;
-
-    margin-bottom:35px;
-
-}
-
-.form-control{
+.input-modern{
 
     width:100%;
 
-    height:54px;
+    height:60px;
+
+    border:1px solid #D9E4EF;
 
     border-radius:14px;
-
-    border:1px solid #DCEAF5;
 
     padding:0 18px;
 
-    outline:none;
+    font-size:16px;
 
     transition:.3s;
 
-    margin-top:8px;
+}
+
+.input-modern:focus{
+
+    border-color:#3B82F6;
+
+    outline:none;
+
+    box-shadow:0 0 0 4px rgba(59,130,246,.10);
 
 }
 
-.form-control:focus{
-
-    border-color:#47B5FF;
-
-    box-shadow:0 0 0 4px rgba(71,181,255,.15);
-
-}
-
-.btn-login{
+.login-btn{
 
     width:100%;
 
-    height:54px;
+    height:60px;
 
     border:none;
 
-    border-radius:14px;
+    border-radius:15px;
 
-    background:#47B5FF;
+    background:linear-gradient(135deg,#52B6FF,#2979FF);
 
     color:white;
 
+    font-size:18px;
+
     font-weight:700;
 
-    font-size:15px;
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 15px 30px rgba(41,121,255,.25);
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 18px 40px rgba(41,121,255,.35);
+
+}
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:28px 0;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#E5E7EB;
+
+}
+
+.divider span{
+
+    color:#94A3B8;
+
+    font-size:14px;
+
+}
+
+.social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-top:18px;
+
+}
+
+.social a{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#F1F5F9;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:18px;
 
     transition:.3s;
 
 }
 
-.btn-login:hover{
+.social a:hover{
 
-    background:#2D9BF0;
+    background:#DBEAFE;
 
-    transform:translateY(-2px);
+}
+
+.footer{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#94A3B8;
+
+    font-size:14px;
 
 }
 
 </style>
 
-<div class="login-wrapper">
+<div class="login-page">
 
-<div class="login-box">
-    <!-- ===========================
-        LEFT PANEL
-=========================== -->
+<div class="login-card">
 
-<div class="left-panel">
+<div class="left-side">
 
-    <div class="logo-circle">
+<div class="brand">
 
-        💻
+<div class="brand-logo">
+💻
+</div>
 
+<div>
+
+<div class="brand-title">
+TechInsight
+</div>
+
+<div class="brand-sub">
+Blog Teknologi Modern
+</div>
+
+</div>
+
+</div>
+
+<h1 class="hero-title">
+Tempat Berbagi<br>
+Wawasan Teknologi
+</h1>
+
+<p class="hero-desc">
+Kelola artikel, kategori, dan konten teknologi
+dengan tampilan modern, ringan, serta mudah digunakan.
+</p>
+<div class="feature">
+
+    <div class="feature-icon">
+        📝
     </div>
 
-    <h1 class="brand-title">
+    <div>
 
-        Blog Teknologi
-
-    </h1>
-
-    <p class="brand-desc">
-
-        Kelola artikel, bagikan wawasan, dan publikasikan
-        konten teknologi dengan tampilan yang modern,
-        sederhana, dan nyaman dibaca.
-
-    </p>
-
-    <div class="tech-box">
-
-        <div class="tech-item">
-
-            <span>🚀 Framework</span>
-
-            <strong>Laravel</strong>
-
+        <div class="feature-title">
+            Kelola Artikel
         </div>
 
-        <div class="tech-item">
-
-            <span>📝 Konten</span>
-
-            <strong>Artikel</strong>
-
+        <div class="feature-desc">
+            Buat, edit, publikasikan, dan kelola seluruh artikel
+            teknologi dengan tampilan yang rapi dan profesional.
         </div>
-
-        <div class="tech-item">
-
-            <span>📂 Kategori</span>
-
-            <strong>Manajemen</strong>
-
-        </div>
-
-        <div class="tech-item">
-
-            <span>🌐 Database</span>
-
-            <strong>MySQL</strong>
-
-        </div>
-
-    </div>
-
-    <div style="margin-top:45px;">
-
-        <svg width="260" height="170" viewBox="0 0 260 170" fill="none">
-
-            <rect x="35"
-                  y="20"
-                  width="190"
-                  height="110"
-                  rx="12"
-                  fill="rgba(255,255,255,.22)"/>
-
-            <rect x="50"
-                  y="35"
-                  width="160"
-                  height="80"
-                  rx="8"
-                  fill="white"/>
-
-            <rect x="90"
-                  y="138"
-                  width="80"
-                  height="10"
-                  rx="5"
-                  fill="rgba(255,255,255,.55)"/>
-
-            <rect x="70"
-                  y="148"
-                  width="120"
-                  height="8"
-                  rx="4"
-                  fill="rgba(255,255,255,.35)"/>
-
-            <circle cx="82"
-                    cy="58"
-                    r="6"
-                    fill="#56CCF2"/>
-
-            <rect x="96"
-                  y="53"
-                  width="80"
-                  height="8"
-                  rx="4"
-                  fill="#D7F2FF"/>
-
-            <rect x="60"
-                  y="74"
-                  width="130"
-                  height="7"
-                  rx="3"
-                  fill="#EAF8FF"/>
-
-            <rect x="60"
-                  y="89"
-                  width="90"
-                  height="7"
-                  rx="3"
-                  fill="#EAF8FF"/>
-
-            <rect x="60"
-                  y="103"
-                  width="110"
-                  height="7"
-                  rx="3"
-                  fill="#EAF8FF"/>
-
-        </svg>
 
     </div>
 
 </div>
 
+<div class="feature">
+
+    <div class="feature-icon">
+        📂
+    </div>
+
+    <div>
+
+        <div class="feature-title">
+            Kelola Kategori
+        </div>
+
+        <div class="feature-desc">
+            Susun kategori artikel agar pengunjung dapat
+            menemukan topik yang mereka cari dengan lebih mudah.
+        </div>
+
+    </div>
+
+</div>
+
+<div class="feature">
+
+    <div class="feature-icon">
+        🚀
+    </div>
+
+    <div>
+
+        <div class="feature-title">
+            Publikasikan Konten
+        </div>
+
+        <div class="feature-desc">
+            Bagikan tutorial, informasi, serta wawasan terbaru
+            seputar dunia teknologi kepada pembaca.
+        </div>
+
+    </div>
+
+</div>
+
+<div class="feature">
+
+    <div class="feature-icon">
+        🛡️
+    </div>
+
+    <div>
+
+        <div class="feature-title">
+            Dashboard Aman
+        </div>
+
+        <div class="feature-desc">
+            Sistem login yang aman sehingga seluruh data artikel
+            dan kategori dapat dikelola dengan nyaman.
+        </div>
+
+    </div>
+
+</div>
+
+<div class="hero-image">
+
+    <img
+        src="{{ asset('images/login-hero.png') }}"
+        alt="Login Illustration">
+
+</div>
+
+</div>
+
 <!-- ===========================
-        RIGHT PANEL
+        PANEL KANAN
 =========================== -->
 
-<div class="right-panel">
+<div class="right-side">
 
-<div class="login-card">
+<div class="form-card">
 
-<x-auth-session-status
-class="mb-4"
-:status="session('status')" />
+<div class="lock-circle">
+🔒
+</div>
 
-<h2 class="login-title">
-
-Selamat Datang 👋
-
+<h2 class="form-title">
+Selamat Datang
 </h2>
 
-<p class="login-subtitle">
-
+<p class="form-sub">
 Masuk ke dashboard untuk mengelola artikel,
-kategori, serta seluruh konten pada
-<strong>Blog Teknologi</strong>.
-
+kategori, serta seluruh konten Blog Teknologi.
 </p>
+
+<x-auth-session-status
+    class="mb-4"
+    :status="session('status')" />
 
 <form method="POST" action="{{ route('login') }}">
 
 @csrf
-<!-- ===========================
-        EMAIL
-=========================== -->
+<!-- Email -->
+<div class="form-group">
 
-<div class="mb-4">
-
-    <x-input-label
-        for="email"
-        :value="__('Email')"
-        class="mb-2"/>
+    <label for="email">
+        Email
+    </label>
 
     <x-text-input
         id="email"
-        class="form-control"
+        class="input-modern"
         type="email"
         name="email"
         :value="old('email')"
         required
         autofocus
-        autocomplete="username"
-        placeholder="Masukkan email Anda"/>
+        autocomplete="username" />
 
     <x-input-error
         :messages="$errors->get('email')"
-        class="mt-2"/>
+        class="mt-2" />
 
 </div>
 
-<!-- ===========================
-        PASSWORD
-=========================== -->
+<!-- Password -->
+<div class="form-group">
 
-<div class="mb-4">
-
-    <x-input-label
-        for="password"
-        :value="__('Password')"
-        class="mb-2"/>
+    <label for="password">
+        Password
+    </label>
 
     <x-text-input
         id="password"
-        class="form-control"
+        class="input-modern"
         type="password"
         name="password"
         required
-        autocomplete="current-password"
-        placeholder="Masukkan password"/>
+        autocomplete="current-password" />
 
     <x-input-error
         :messages="$errors->get('password')"
-        class="mt-2"/>
+        class="mt-2" />
 
 </div>
-
-<!-- ===========================
-      REMEMBER & FORGOT
-=========================== -->
-
-<div class="d-flex justify-content-between align-items-center mb-4">
-
-    <label class="d-flex align-items-center">
-
-        <input
-            type="checkbox"
-            name="remember"
-            class="me-2">
-
-        <span style="color:#64748B;">
-
-            Ingat Saya
-
-        </span>
-
-    </label>
-
-    @if (Route::has('password.request'))
-
-        <a
-            href="{{ route('password.request') }}"
-            style="
-                color:#47B5FF;
-                text-decoration:none;
-                font-weight:600;
-            ">
-
-            Lupa Password?
-
-        </a>
-
-    @endif
-
-</div>
-
-<!-- ===========================
-        BUTTON
-=========================== -->
-
-<button
-    type="submit"
-    class="btn-login">
-
-    🔐 Masuk ke Dashboard
-
-</button>
 
 <div
 style="
-margin-top:30px;
-text-align:center;
-color:#94A3B8;
-font-size:14px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
 ">
 
-© {{ date('Y') }}
+<label
+style="
+display:flex;
+align-items:center;
+gap:8px;
+font-size:15px;
+color:#64748B;
+">
 
-<strong style="color:#47B5FF">
+<input
+id="remember_me"
+type="checkbox"
+name="remember">
 
-Blog Teknologi
+Remember Me
 
-</strong>
+</label>
 
+@if (Route::has('password.request'))
+
+<a
+href="{{ route('password.request') }}"
+style="
+text-decoration:none;
+color:#2563EB;
+font-weight:600;
+">
+
+Lupa Password?
+
+</a>
+
+@endif
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+🚀 Masuk ke Dashboard
+
+</button>
+
+<div class="divider">
+
+<span>
+atau
+</span>
+
+</div>
+
+@if (Route::has('register'))
+
+<div
+style="
+text-align:center;
+font-size:15px;
+color:#64748B;
+">
+
+Belum mempunyai akun?
+
+<a
+href="{{ route('register') }}"
+style="
+color:#2563EB;
+font-weight:700;
+text-decoration:none;
+">
+
+Daftar Sekarang
+
+</a>
+
+</div>
+
+@endif
+
+<div class="social">
+
+<a href="#">
+🌐
+</a>
+
+<a href="#">
+📘
+</a>
+
+<a href="#">
+📧
+</a>
+
+</div>
+
+<div class="footer">
+
+© {{ date('Y') }} TechInsight
 <br>
 
-Laravel • MySQL • Bootstrap
+Blog Teknologi Modern
 
 </div>
 
 </form>
+
+</div>
+
+</div>
+</div>
 </div>
 
 </div>
 
 <style>
 
-/*===========================
-        ANIMATION
-===========================*/
+@media (max-width:1200px){
 
-.login-box{
+.login-card{
 
-    animation:fadeIn .8s ease;
+grid-template-columns:1fr;
 
-}
-
-@keyframes fadeIn{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(30px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
+max-width:700px;
 
 }
 
-/*===========================
-        INPUT EFFECT
-===========================*/
+.left-side{
 
-input[type="checkbox"]{
-
-    accent-color:#47B5FF;
-
-    width:16px;
-
-    height:16px;
-
-    cursor:pointer;
+padding:45px;
 
 }
 
-a{
+.right-side{
 
-    transition:.3s;
-
-}
-
-a:hover{
-
-    color:#2196F3!important;
+padding:40px;
 
 }
 
-/*===========================
-        RESPONSIVE
-===========================*/
+.hero-title{
 
-@media(max-width:991px){
-
-.login-wrapper{
-
-    padding:20px;
+font-size:42px;
 
 }
 
-.login-box{
+.hero-desc{
 
-    flex-direction:column;
-
-    min-height:auto;
+font-size:17px;
 
 }
 
-.left-panel{
+.hero-image{
 
-    width:100%;
-
-    padding:45px 30px;
+margin-top:40px;
 
 }
 
-.right-panel{
+.hero-image img{
 
-    width:100%;
-
-    padding:40px 25px;
-
-}
-
-.brand-title{
-
-    font-size:30px;
-
-}
-
-.tech-box{
-
-    margin-top:30px;
+max-width:360px;
 
 }
 
 }
 
-@media(max-width:576px){
+@media (max-width:768px){
 
-.left-panel{
+.login-page{
 
-    display:none;
-
-}
-
-.right-panel{
-
-    width:100%;
-
-    padding:30px 20px;
+padding:15px;
 
 }
 
 .login-card{
 
-    max-width:100%;
+border-radius:20px;
 
 }
 
-.login-title{
+.left-side{
 
-    font-size:28px;
-
-}
-
-.login-subtitle{
-
-    font-size:14px;
+padding:30px 25px;
 
 }
 
-.form-control{
+.right-side{
 
-    height:50px;
+padding:25px 18px;
 
 }
 
-.btn-login{
+.brand{
 
-    height:50px;
+margin-bottom:30px;
+
+}
+
+.brand-logo{
+
+width:52px;
+
+height:52px;
+
+font-size:22px;
+
+}
+
+.brand-title{
+
+font-size:28px;
+
+}
+
+.hero-title{
+
+font-size:32px;
+
+}
+
+.hero-desc{
+
+font-size:15px;
+
+line-height:1.7;
+
+margin-bottom:28px;
+
+}
+
+.feature{
+
+margin-bottom:18px;
+
+}
+
+.feature-icon{
+
+width:46px;
+
+height:46px;
+
+font-size:20px;
+
+}
+
+.feature-title{
+
+font-size:18px;
+
+}
+
+.feature-desc{
+
+font-size:14px;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+max-width:280px;
+
+}
+
+.form-card{
+
+padding:28px 22px;
+
+box-shadow:none;
+
+}
+
+.lock-circle{
+
+width:75px;
+
+height:75px;
+
+font-size:34px;
+
+}
+
+.form-title{
+
+font-size:30px;
+
+}
+
+.form-sub{
+
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.login-btn{
+
+height:54px;
+
+font-size:16px;
+
+}
+
+.footer{
+
+font-size:13px;
+
+}
+
+.social{
+
+gap:12px;
+
+}
+
+.social a{
+
+width:38px;
+
+height:38px;
 
 }
 

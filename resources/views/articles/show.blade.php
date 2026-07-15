@@ -71,7 +71,7 @@ body{
     width:100%;
 
     max-height:360px;
-
+border-radius:16px;
     object-fit:cover;
 
 }

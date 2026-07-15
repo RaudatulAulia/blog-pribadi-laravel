@@ -2,50 +2,64 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Category;
+use Illuminate\Support\Str;
 
 class CategorySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        Category::create([
-    'user_id' => 1,
-    'name' => 'Laravel',
-    'slug' => 'laravel',
-    'description' => 'Artikel mengenai framework Laravel.'
-]);
+        $categories = [
 
-Category::create([
-    'user_id' => 1,
-    'name' => 'Artificial Intelligence',
-    'slug' => 'artificial-intelligence',
-    'description' => 'Artikel mengenai Artificial Intelligence.'
-]);
+            [
+                'name' => 'Web Development',
+                'description' => 'Artikel mengenai pengembangan website menggunakan berbagai teknologi web.',
+            ],
 
-Category::create([
-    'user_id' => 1,
-    'name' => 'Pemrograman',
-    'slug' => 'pemrograman',
-    'description' => 'Artikel mengenai dasar-dasar pemrograman.'
-]);
+            [
+                'name' => 'UI/UX',
+                'description' => 'Artikel mengenai desain antarmuka dan pengalaman pengguna.',
+            ],
 
-Category::create([
-    'user_id' => 1,
-    'name' => 'Cyber Security',
-    'slug' => 'cyber-security',
-    'description' => 'Artikel mengenai keamanan siber.'
-]);
+            [
+                'name' => 'Database',
+                'description' => 'Artikel mengenai basis data dan pengelolaan informasi.',
+            ],
 
-Category::create([
-    'user_id' => 1,
-    'name' => 'Cloud Computing',
-    'slug' => 'cloud-computing',
-    'description' => 'Artikel mengenai cloud computing.'
-]);
+            [
+                'name' => 'Artificial Intelligence',
+                'description' => 'Artikel mengenai perkembangan teknologi kecerdasan buatan.',
+            ],
+
+            [
+                'name' => 'Cyber Security',
+                'description' => 'Artikel mengenai keamanan sistem dan perlindungan data digital.',
+            ],
+
+            [
+                'name' => 'Cloud Computing',
+                'description' => 'Artikel mengenai layanan cloud dan komputasi awan.',
+            ],
+
+            [
+                'name' => 'Programming',
+                'description' => 'Artikel mengenai bahasa pemrograman dan pengembangan perangkat lunak.',
+            ],
+
+           
+
+        ];
+
+        foreach ($categories as $category) {
+
+            Category::create([
+                'user_id' => 1,
+                'name' => $category['name'],
+                'slug' => Str::slug($category['name']),
+                'description' => $category['description'],
+            ]);
+
+        }
     }
 }

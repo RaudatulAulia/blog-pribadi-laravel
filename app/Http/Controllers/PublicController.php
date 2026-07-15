@@ -30,12 +30,18 @@ class PublicController extends Controller
         return view('blog.index', compact('articles', 'categories'));
     }
 
-    public function show($slug)
-    {
-        $article = Article::where('slug', $slug)
-            ->with(['user', 'category'])
-            ->firstOrFail();
+   public function show($slug)
+{
+    $article = Article::where('slug', $slug)
+        ->with([
+            'user',
+            'category',
+            'comments' => function ($query) {
+                $query->latest();
+            }
+        ])
+        ->firstOrFail();
 
-        return view('blog.show', compact('article'));
-    }
+    return view('blog.show', compact('article'));
+}
 }

@@ -1,18 +1,10 @@
 # 📖 Aplikasi Blog Teknologi Berbasis Laravel
 
-<p align="center">
+**Project Individu Mata Kuliah Pemrograman Web Lanjut (IF-3204)**  
+Program Studi Teknik Informatika  
+Fakultas Teknik  
+Universitas Malikussaleh
 
-**Project Individu Mata Kuliah Pemrograman Web Lanjut (IF-3204)**
-
-Program Studi Teknik Informatika • Fakultas Teknik • Universitas Malikussaleh
-
-![Laravel](https://img.shields.io/badge/Laravel-12-red?style=for-the-badge&logo=laravel)
-![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php)
-![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge&logo=mysql)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?style=for-the-badge&logo=bootstrap)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)
-
-</p>
 ## 📌 Deskripsi Aplikasi
 
 Aplikasi Blog Teknologi Berbasis Laravel merupakan aplikasi web yang dikembangkan menggunakan framework **Laravel 12** dengan menerapkan arsitektur **Model View Controller (MVC)**. Aplikasi ini dirancang sebagai media publikasi artikel yang membahas berbagai topik teknologi, seperti pemrograman, pengembangan web, kecerdasan buatan (*Artificial Intelligence*), keamanan siber (*Cyber Security*), *Cloud Computing*, serta perkembangan teknologi informasi lainnya.

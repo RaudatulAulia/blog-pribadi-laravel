@@ -67,13 +67,14 @@ body{
 ===========================*/
 
 .article-image{
-
     width:100%;
-
-    max-height:360px;
-border-radius:16px;
-    object-fit:cover;
-
+    height:auto;
+    max-height:600px;
+    display:block;
+    margin:0 auto 30px;
+    object-fit:contain;
+    border-radius:16px;
+    background:#fff;
 }
 
 /*==========================
@@ -286,7 +287,7 @@ Draft
 
 <h5 class="mb-3">
 
-📝 Konten
+📝 Isi Artikel
 
 </h5>
 

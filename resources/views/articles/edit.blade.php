@@ -317,7 +317,7 @@ value="published"
 
 <label class="form-label">
 
-Konten
+Isi Artikel
 
 </label>
 

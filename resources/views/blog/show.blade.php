@@ -309,13 +309,7 @@ class="article-image">
 
 </div>
 
-<a
-href="{{ route('blog.index') }}"
-class="btn-back">
 
-← Kembali ke Blog
-
-</a>
 <hr class="my-5">
 
 @if(session('success'))
@@ -393,6 +387,7 @@ Kirim Komentar
 
 </div>
 
+
 <h3 class="comment-count">
 
 Semua Komentar ({{ $article->comments->count() }})
@@ -446,6 +441,12 @@ Belum ada komentar.
 </div>
 
 @endforelse
+<a
+href="{{ route('blog.index') }}"
+class="btn-back">
 
+← Kembali ke Blog
+
+</a>
 </div>
 @endsection

@@ -7,7 +7,7 @@ Universitas Malikussaleh
 
 ## 📌 Deskripsi Aplikasi
 
-Aplikasi Blog Teknologi Berbasis Laravel merupakan aplikasi web yang dikembangkan menggunakan framework **Laravel 12** dengan menerapkan arsitektur **Model View Controller (MVC)**. Aplikasi ini dirancang sebagai media publikasi artikel yang membahas berbagai topik teknologi, seperti pemrograman, pengembangan web, kecerdasan buatan (*Artificial Intelligence*), keamanan siber (*Cyber Security*), *Cloud Computing*, serta perkembangan teknologi informasi lainnya.
+Aplikasi Blog Pribadi  Berbasis Laravel  untuk Publikasi Artikel Teknologi merupakan aplikasi web yang dikembangkan menggunakan framework **Laravel 12** dengan menerapkan arsitektur **Model View Controller (MVC)**. Aplikasi ini dirancang sebagai media publikasi artikel yang membahas berbagai topik teknologi, seperti pemrograman, pengembangan web, kecerdasan buatan (*Artificial Intelligence*), keamanan siber (*Cyber Security*), *Cloud Computing*, serta perkembangan teknologi informasi lainnya.
 
 Aplikasi memiliki dua jenis pengguna, yaitu **Administrator** dan **Pengunjung**. Administrator merupakan pengguna yang telah melakukan autentikasi melalui halaman login sehingga memiliki hak akses untuk mengelola kategori dan artikel melalui dashboard. Pengunjung tidak perlu melakukan login untuk mengakses halaman publik dan dapat membaca artikel yang telah dipublikasikan, melakukan pencarian artikel berdasarkan judul, memfilter artikel berdasarkan kategori, serta memberikan komentar pada halaman detail artikel.
 
@@ -154,9 +154,11 @@ php artisan serve
 ```
 
 Buka browser melalui alamat:
+
 ```text
 http://127.0.0.1:8000
 ```
+
 ## 👤 Akun Demo
 
 Gunakan akun berikut untuk mengakses dashboard aplikasi.
@@ -166,6 +168,7 @@ Gunakan akun berikut untuk mengakses dashboard aplikasi.
 ```text
 admin@gmail.com
 ```
+
 🔑 **Password**
 ```text
 123456789
@@ -178,15 +181,19 @@ admin@gmail.com
 Aplikasi menggunakan empat tabel utama yang saling berelasi.
 
 📁 **users**
+
 Menyimpan data administrator yang dapat mengakses dashboard aplikasi.
 
 📁 **categories**
+
 Menyimpan data kategori artikel yang dibuat oleh administrator.
 
 📁 **articles**
+
 Menyimpan data artikel beserta judul, isi artikel, thumbnail, status publikasi, dan kategori artikel.
 
 📁 **comments**
+
 Menyimpan komentar yang diberikan oleh pengunjung pada setiap artikel.
 
 ## 👩‍💻 Author
@@ -194,5 +201,7 @@ Menyimpan komentar yang diberikan oleh pengunjung pada setiap artikel.
 **Raudatul Aulia**
 
 Program Studi Teknik Informatika
+
 Fakultas Teknik
+
 Universitas Malikussaleh

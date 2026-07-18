@@ -284,7 +284,7 @@ body{
 
     <h5>
 
-       Di Dashboard Blog Teknologi
+        Dashboard Blog Pribadi
 
     </h5>
 

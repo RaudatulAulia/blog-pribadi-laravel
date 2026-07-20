@@ -336,9 +336,11 @@ class="article-image">
 
 <div class="comment-form">
 
-<form action="{{ route('comments.store',$article->id) }}" method="POST">
+<form action="{{ route('comments.store') }}" method="POST">
 
-@csrf
+    @csrf
+
+    <input type="hidden" name="article_id" value="{{ $article->id }}">
 
 <div class="mb-3">
 
